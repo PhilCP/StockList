@@ -4,11 +4,13 @@ import { useForm } from 'react-hook-form';
 import { Button } from '@/components/ui/button';
 import InputField from '@/components/forms/InputField';
 import FooterLink from '@/components/forms/FooterLink';
-import { toast } from "sonner";
-import { useRouter } from "next/navigation";
+import {signInWithEmail, signUpWithEmail} from "@/lib/actions/auth.actions";
+import {toast} from "sonner";
+import {signInEmail} from "better-auth/api";
+import {useRouter} from "next/navigation";
 
 const SignIn = () => {
-    const router = useRouter();
+    const router = useRouter()
     const {
         register,
         handleSubmit,
@@ -23,16 +25,15 @@ const SignIn = () => {
 
     const onSubmit = async (data: SignInFormData) => {
         try {
-            // TEMPORARY: Fake success
-            toast.success("Signed in successfully (demo mode)");
-
-            // Redirect (optional)
-            router.push('/');
+            const result = await signInWithEmail(data);
+            if(result.success) router.push('/');
         } catch (e) {
             console.error(e);
-            toast.error("Sign-in failed");
+            toast.error('Sign in failed', {
+                description: e instanceof Error ? e.message : 'Failed to sign in.'
+            })
         }
-    };
+    }
 
     return (
         <>
@@ -42,13 +43,10 @@ const SignIn = () => {
                 <InputField
                     name="email"
                     label="Email"
-                    placeholder="user@gmail.com"
+                    placeholder="contact@jsmastery.com"
                     register={register}
                     error={errors.email}
-                    validation={{
-                        required: 'Email is required',
-                        pattern: /^\w+@\w+\.\w+$/,
-                    }}
+                    validation={{ required: 'Email is required', pattern: /^\w+@\w+\.\w+$/ }}
                 />
 
                 <InputField
@@ -58,28 +56,16 @@ const SignIn = () => {
                     type="password"
                     register={register}
                     error={errors.password}
-                    validation={{
-                        required: 'Password is required',
-                        minLength: 8,
-                    }}
+                    validation={{ required: 'Password is required', minLength: 8 }}
                 />
 
-                <Button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="yellow-btn w-full mt-5"
-                >
+                <Button type="submit" disabled={isSubmitting} className="yellow-btn w-full mt-5">
                     {isSubmitting ? 'Signing In' : 'Sign In'}
                 </Button>
 
-                <FooterLink
-                    text="Don't have an account?"
-                    linkText="Create an account"
-                    href="/sign-up"
-                />
+                <FooterLink text="Don't have an account?" linkText="Create an account" href="/sign-up" />
             </form>
         </>
     );
 };
-
 export default SignIn;
