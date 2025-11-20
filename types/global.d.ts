@@ -204,6 +204,12 @@ declare global {
         category?: string;
         related?: string;
     };
+    type UserForNewsEmail = {
+        id: string; 
+        email: string;
+        name: string; // Needed for the welcome email/news email greeting
+        // Include any other user fields needed for personalization/actions from the DB
+    };
 
     type Alert = {
         id: string;
