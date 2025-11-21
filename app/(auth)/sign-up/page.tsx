@@ -38,7 +38,7 @@ const SignUp = () => {
         if (result.success) {
             router.push('/');
         } else {
-            // Handle server-side errors (e.g., "Email already in use")
+            // Handle server-side errors (e.g., "Email already in use"
             toast.error('Sign up failed', {
                 description: result.error || 'An error occurred during sign up.'
             });
