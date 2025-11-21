@@ -23,7 +23,7 @@ const SignUp = () => {
             fullName: '',
             email: '',
             password: '',
-            country: 'US',
+            country: 'KE',
             investmentGoals: 'Growth',
             riskTolerance: 'Medium',
             preferredIndustry: 'Technology'
@@ -68,7 +68,7 @@ const SignUp = () => {
                 <InputField
                     name="email"
                     label="Email"
-                    placeholder="contact@jstocklist.com"
+                    placeholder="contact@stocklist.com"
                     register={register}
                     error={errors.email}
                     validation={{ required: 'Email name is required', pattern: /^\w+@\w+\.\w+$/, message: 'Email address is required' }}
