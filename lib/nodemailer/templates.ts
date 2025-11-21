@@ -98,14 +98,14 @@ export const WELCOME_EMAIL_TEMPLATE = `<!DOCTYPE html>
                     <!-- Header with Logo -->
                     <tr>
                         <td align="left" class="mobile-header-padding" style="padding: 40px 40px 20px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/logo.png?updatedAt=1756378431634" alt="Signalist Logo" width="150" style="max-width: 100%; height: auto;">
+                            <img src="https://ik.imagekit.io/stockll/stockll.png" alt="Signalist Logo" width="150" style="max-width: 100%; height: auto;">
                         </td>
                     </tr>
                     
                     <!-- Dashboard Preview Image -->
                     <tr>
                         <td align="center" class="dashboard-preview" style="padding: 40px 40px 0px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/dashboard-preview.png?updatedAt=1756378548102" alt="Signalist Dashboard Preview" width="100%" style="max-width: 520px; width: 100%; height: auto; border-radius: 12px; border: 1px solid #30333A;">
+                            <img src="https://ik.imagekit.io/stockll/Screenshot%202025-11-21%20at%2012.23.34.png" alt="Signalist Dashboard Preview" width="100%" style="max-width: 520px; width: 100%; height: auto; border-radius: 12px; border: 1px solid #30333A;">
                         </td>
                     </tr>
                     
@@ -261,7 +261,7 @@ export const NEWS_SUMMARY_EMAIL_TEMPLATE = `<!DOCTYPE html>
                     <!-- Header with Logo -->
                     <tr>
                         <td align="left" class="mobile-header-padding" style="padding: 40px 40px 20px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/logo.png?updatedAt=1756378431634" alt="Signalist Logo" width="150" style="max-width: 100%; height: auto;">
+                            <img src="https://ik.imagekit.io/stockll/stockll.png" alt="Signalist Logo" width="150" style="max-width: 100%; height: auto;">
                         </td>
                     </tr>
                     
@@ -289,7 +289,7 @@ export const NEWS_SUMMARY_EMAIL_TEMPLATE = `<!DOCTYPE html>
                                 </p>
                                 <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     <a href="#" style="color: #CCDADC !important; text-decoration: underline;">Unsubscribe</a> | 
-                                    <a href="https://signalist.app" style="color: #CCDADC !important; text-decoration: underline;">Visit Signalist</a>
+                                    <a href="https://stocklist.app" style="color: #CCDADC !important; text-decoration: underline;">Visit Signalist</a>
                                 </p>
                                 <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     © 2025 Signalist
@@ -411,7 +411,7 @@ export const STOCK_ALERT_UPPER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                     <!-- Header with Logo -->
                     <tr>
                         <td align="left" class="mobile-header-padding" style="padding: 40px 40px 20px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/logo.png?updatedAt=1756378431634" alt="Signalist Logo" width="150" style="max-width: 100%; height: auto;">
+                            <img src="https://ik.imagekit.io/a6fkjou7d/stock.png?updatedAt=1756378431634" alt="Signalist Logo" width="150" style="max-width: 100%; height: auto;">
                         </td>
                     </tr>
                     
@@ -498,7 +498,7 @@ export const STOCK_ALERT_UPPER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                                 </p>
                                 <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     <a href="#" style="color: #CCDADC !important; text-decoration: underline;">Unsubscribe</a> | 
-                                    <a href="https://signalist.app" style="color: #CCDADC !important; text-decoration: underline;">Visit Signalist</a>
+                                    <a href="https://stocklist.app" style="color: #CCDADC !important; text-decoration: underline;">Visit Signalist</a>
                                 </p>
                                 <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     © 2025 Signalist
@@ -620,7 +620,7 @@ export const STOCK_ALERT_LOWER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                     <!-- Header with Logo -->
                     <tr>
                         <td align="left" class="mobile-header-padding" style="padding: 40px 40px 20px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/logo.png?updatedAt=1756378431634" alt="Signalist Logo" width="150" style="max-width: 100%; height: auto;">
+                            <img src="https://ik.imagekit.io/stockll/stockll.png" alt="Signalist Logo" width="150" style="max-width: 100%; height: auto;">
                         </td>
                     </tr>
                     
@@ -707,7 +707,7 @@ export const STOCK_ALERT_LOWER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                                 </p>
                                 <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     <a href="#" style="color: #CCDADC !important; text-decoration: underline;">Unsubscribe</a> | 
-                                    <a href="https://signalist.app" style="color: #CCDADC !important; text-decoration: underline;">Visit Signalist</a>
+                                    <a href="https://stocklist.app" style="color: #CCDADC !important; text-decoration: underline;">Visit Signalist</a>
                                 </p>
                                 <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     © 2025 Signalist
@@ -820,7 +820,7 @@ export const VOLUME_ALERT_EMAIL_TEMPLATE = `<!DOCTYPE html>
                     <!-- Header with Logo -->
                     <tr>
                         <td align="left" class="mobile-header-padding" style="padding: 40px 40px 20px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/logo.png?updatedAt=1756378431634" alt="Signalist Logo" width="150" style="max-width: 100%; height: auto;">
+                            <img src="https://ik.imagekit.io/stockll/stockll.png" alt="Signalist Logo" width="150" style="max-width: 100%; height: auto;">
                         </td>
                     </tr>
                     
@@ -927,7 +927,7 @@ export const VOLUME_ALERT_EMAIL_TEMPLATE = `<!DOCTYPE html>
                                 </p>
                                 <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     <a href="#" style="color: #CCDADC !important; text-decoration: underline;">Unsubscribe</a> | 
-                                    <a href="https://signalist.app" style="color: #CCDADC !important; text-decoration: underline;">Visit Signalist</a>
+                                    <a href="https://stocklist.app" style="color: #CCDADC !important; text-decoration: underline;">Visit Signalist</a>
                                 </p>
                                 <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important;">
                                     © 2025 Signalist
@@ -1043,7 +1043,7 @@ export const INACTIVE_USER_REMINDER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                     <!-- Header with Logo -->
                     <tr>
                         <td align="left" class="mobile-header-padding" style="padding: 40px 40px 20px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/logo.png?updatedAt=1756378431634" alt="Signalist Logo" width="150" style="max-width: 100%; height: auto;">
+                            <img src="https://ik.imagekit.io/stockll/stockll.png"alt="Signalist Logo" width="150" style="max-width: 100%; height: auto;">
                         </td>
                     </tr>
                     
