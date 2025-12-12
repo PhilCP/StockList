@@ -2,7 +2,7 @@
 
 import { auth } from "@/lib/better-auth/auth";
 import { inngest } from "@/lib/inngest/client";
-import { headers } from "next/headers"; // Import headers
+import { headers } from "next/headers"; 
 
 export const signUpWithEmail = async (formData: SignUpFormData) => {
     const { email, password, fullName, country, investmentGoals, riskTolerance, preferredIndustry } = formData;
@@ -10,7 +10,7 @@ export const signUpWithEmail = async (formData: SignUpFormData) => {
     try {
         const response = await auth.api.signUpEmail({ 
             body: { email, password, name: fullName },
-            headers: await headers() // <--- CRITICAL FIX
+            headers: await headers() 
         });
 
         if(response) {
@@ -31,7 +31,7 @@ export const signInWithEmail = async ({ email, password }: SignInFormData) => {
     try {
         const response = await auth.api.signInEmail({ 
             body: { email, password },
-            headers: await headers() // <--- CRITICAL FIX
+            headers: await headers() 
         })
 
         return { success: true, data: response }
