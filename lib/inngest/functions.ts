@@ -52,7 +52,7 @@ export const sendSignUpEmail = inngest.createFunction(
 );
 
 /* --------------------------------------------------------------------------
-   DAILY NEWS SUMMARY FUNCTION — FULLY DISABLED FOR NOW
+   DAILY NEWS SUMMARY FUNCTION — disabled
 -------------------------------------------------------------------------- */
 
 // export const sendDailyNewsSummary = inngest.createFunction(
