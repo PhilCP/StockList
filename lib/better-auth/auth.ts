@@ -12,13 +12,13 @@ const mongoose = await connectToDatabase();
 
 // 2. Extract the native MongoDB Client and Database Name
 // Casting to MongoClient resolves the dependency conflict
-const client = mongoose.connection.getClient() as MongoClient; 
+const client = mongoose.connection.getClient() as unknown as MongoClient;
 const dbName = mongoose.connection.name;
 
 export const auth = betterAuth({
     // 3. FIX: Pass the native Db instance to the adapter using a type cast (Db)
     // This isolates the adapter from Mongoose hooks and resolves the complex type error.
-    database: mongodbAdapter(client.db(dbName) as Db), 
+    database: mongodbAdapter(client.db(dbName) as unknown as Db), 
     
     secret: process.env.BETTER_AUTH_SECRET,
     baseURL: process.env.BETTER_AUTH_URL,
