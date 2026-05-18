@@ -51,9 +51,7 @@ export const sendSignUpEmail = inngest.createFunction(
   }
 );
 
-/* --------------------------------------------------------------------------
-   DAILY NEWS SUMMARY FUNCTION — FULLY DISABLED FOR NOW
--------------------------------------------------------------------------- */
+//  DAILY NEWS SUMMARY FUNCTION — FULLY DISABLED FOR NOW
 
 // export const sendDailyNewsSummary = inngest.createFunction(
 //     { id: 'daily-news-summary' },
